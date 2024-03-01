@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         Employee employee = new Employee("Ivanov3 Ivan Ivanovich", 150400, 1);
-        Employee employee1 = new Employee("Petrov4 Petr Petrovich", 67000, 4);
+        Employee employee1 = new Employee("Petrov Petr Petrovich", 80000, 4);
         Employee employee2 = new Employee("Sidorov Sidr Sidorovich", 120000, 3);
         Employee employee3 = new Employee("Ivanov2 Ivan Ivanovich", 150400, 1);
         Employee employee4 = new Employee("Petrov Petr Petrovich", 67000, 4);
@@ -50,22 +50,23 @@ public class Main {
         epb.printSalaryMin(epb.getAllEmployee());
         epb.printSalaryMax(epb.getAllEmployee());
         epb.printNamesEmployee(epb.getAllEmployee());
-        double index = 0.00;
+        double index = 0.01;
         epb.printIndexSalary(epb.getAllEmployee(), index);
         int department = 4;
         epb.printSalaryMinIndex(epb.getAllEmployee(), department);
         epb.printSalaryMaxIndex(epb.getAllEmployee(), department);
         epb.printSumSalaryDepartment(epb.getAllEmployee(), department);
         epb.printAverageSumSalaryDepartment(epb.getAllEmployee(), department);
-        double indexDepartment = 0.01;
+        double indexDepartment = 0.02;
         epb.printIndexSalaryDepartment(epb.getAllEmployee(), indexDepartment, department);
         epb.printAllDataEmployeeDepartment(epb.getAllEmployee(), department);
-        double less = 50000;
+        double less = 70000;
         epb.printEmployeeLessThan(epb.getAllEmployee(), less);
         double more = 100000;
         epb.printEmployeeMoreThan(epb.getAllEmployee(), more);
         int id = 6;
         epb.printEmployeeId(id);
+
         epb.compareEmployee();
     }
 }
